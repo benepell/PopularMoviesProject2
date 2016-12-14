@@ -25,9 +25,9 @@ You must provide your own API key in order to build the app. When you get it, ju
 
 ![screen](phone-details.png)
 
-![screen](tablet-movies.png)
+![screen](tablet-movies.jpg)
 
-![screen](tablet-details.png)
+![screen](tablet-details.jpg)
 
 
 ## Libraries
