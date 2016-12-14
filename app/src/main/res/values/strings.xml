@@ -1,0 +1,43 @@
+<resources>
+    <!-- GENERAL -->
+    <string name="app_name">Pop Movies</string>
+
+    <!-- INTENT -->
+    <string name="intent_extra_movie_model" translatable="false">MovieContent</string>
+
+    <!-- SHARED PREFERENCES -->
+    <string name="pref_key_sort" translatable="false">k_pref</string>
+
+    <string name="movie_save_state" translatable="false">movie_save_state</string>
+    <string name="review_save_state" translatable="false">review_save_state</string>
+    <string name="trailer_save_state" translatable="false">trailer_save_state</string>
+
+    <!-- STRING NETWORK STATE - NO INTERNET-->
+    <string name="network_state_not_connected">No Internet connection &#8230; Make sure Wi-Fi or cellular data is turned on, then try again.</string>
+    <string name="details_released_label">Released: </string>
+
+    <!-- NO OUTPUT-->
+    <string name="movies_details_date_error">Date not Available</string>
+
+    <!-- LABEL-->
+    <string name="details_udacity_label_text">Movie detail</string>
+    <string name="details_rating_label">Rating: </string>
+    <string name="details_content_description_image_poster">Detail Poster</string>
+
+    <!-- MENU -->
+    <string name="menu_sort">Category</string>
+    <string name="menu_sort_popular">Most popular</string>
+    <string name="menu_sort_top_rated">Highest rated</string>
+    <string name="menu_sort_favorites">Favorites</string>
+
+    <string name="details_content_description_image_child">Details Content Description Image Child</string>
+
+    <!-- YOUTUBE PLAYER -->
+    <string name="title_trailers">Trailers:</string>
+    <string name="review_title">Reviews:</string>
+    <string name="video_click_youtube_description">Click here for Video Youtube</string>
+    <string name="share">Share</string>
+    <string name="favorites_image_description">favorites</string>
+
+
+</resources>

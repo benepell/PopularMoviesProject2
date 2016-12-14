@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="eu.pellerito.popularmoviesproject2.fragment.DetailFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detail_poster"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/details_content_description_image_poster"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/image_youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.4"
+            android:contentDescription="@string/video_click_youtube_description"
+            android:src="@drawable/youtube" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/image_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/content_margin_medium"
+        android:layout_marginTop="@dimen/content_margin_medium"
+        android:contentDescription="@string/favorites_image_description"
+        android:src="@drawable/icon_favorites"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/content_padding_medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details_released_label"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/detail_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/content_padding_medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details_rating_label"
+            android:textSize="@dimen/text_size_medium" />
+
+        <RatingBar
+            android:id="@+id/detail_rating"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_divider_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/detail_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_padding_medium"
+        android:layout_marginTop="@dimen/content_padding_medium"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="italic" />
+
+    <View
+        android:id="@+id/separator_review"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_divider_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/review_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_padding_medium"
+        android:layout_marginTop="@dimen/content_padding_medium"
+        android:text="@string/review_title"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_review_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+    <View
+        android:id="@+id/separator_trailer"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_divider_color"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/trailer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_padding_medium"
+        android:layout_marginTop="@dimen/content_padding_medium"
+        android:text="@string/title_trailers"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_base_trailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_padding_medium"
+        android:orientation="vertical" />
+
+</LinearLayout>

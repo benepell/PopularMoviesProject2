@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="eu.pellerito.popularmoviesproject2.activity.DetailActivity"
+    android:baselineAligned="false">
+
+    <fragment
+        android:id="@+id/base_fragment"
+        android:name="eu.pellerito.popularmoviesproject2.fragment.BaseFragment"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        tools:layout="@layout/fragment_base"
+        tools:ignore="InconsistentLayout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:id="@+id/detail_container"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
